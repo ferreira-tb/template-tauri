@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.14.0",
@@ -13,7 +13,7 @@
     "build-only": "vite build",
     "deps": "taze -f -w -l",
     "dev": "cargo tauri dev",
-    "format": "prettier . --write",
+    "format": "prettier . --write && cargo fmt --manifest-path=src-tauri/Cargo.toml",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "type-check": "vue-tsc --noEmit",
