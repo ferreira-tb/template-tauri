@@ -1,4 +1,7 @@
-![](./terminal.gif)
+<div align="center">
+  <img src="./terminal.gif" alt="cli"/>
+</div>
+
 
 ```bash
 cargo install manatsu tauri-cli
