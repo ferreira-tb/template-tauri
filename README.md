@@ -1,3 +1,5 @@
+![](./terminal.gif)
+
 ```bash
 cargo install manatsu tauri-cli
 manatsu create
