@@ -2,10 +2,12 @@ version: 2
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
+    labels: []
     schedule:
       interval: 'weekly'
 
   - package-ecosystem: 'cargo'
     directory: '/'
+    labels: []
     schedule:
       interval: 'weekly'
