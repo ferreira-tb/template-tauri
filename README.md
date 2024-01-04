@@ -3,7 +3,7 @@ cargo install manatsu tauri-cli
 manatsu create
 
 cd PROJECT_NAME
-cargo tauri dev
+npm run dev
 ```
 
 Just remember to change `PROJECT_NAME` to the name you chose.
