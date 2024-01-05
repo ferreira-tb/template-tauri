@@ -1,11 +1,27 @@
 <script setup lang="ts">
-import { MNavbar, MScaffold } from 'manatsu';
+import { MBrand, MButton, MNavbar, MScaffold, useDarkMode } from 'manatsu';
+
+const darkMode = useDarkMode();
+
+function toggleDarkMode() {
+  darkMode.value = !darkMode.value;
+}
 </script>
 
 <template>
   <MScaffold>
     <template #header>
-      <MNavbar title="Hello, Manatsu!" />
+      <MNavbar>
+        <template #start>
+          <MBrand>
+            <template #title>Hello, Manatsu!</template>
+          </MBrand>
+        </template>
+
+        <template #end>
+          <MButton outlined @click="toggleDarkMode">Toggle Dark Mode</MButton>
+        </template>
+      </MNavbar>
     </template>
 
     <RouterView #default="{ Component }">
