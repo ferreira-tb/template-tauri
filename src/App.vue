@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import { MBrand, MButton, MNavbar, MScaffold, useDarkMode } from 'manatsu';
-
-const darkMode = useDarkMode();
-
-function toggleDarkMode() {
-  darkMode.value = !darkMode.value;
-}
+import { MBrand, MButton, MNavbar, MScaffold } from 'manatsu';
 </script>
 
 <template>
@@ -19,7 +13,9 @@ function toggleDarkMode() {
         </template>
 
         <template #end>
-          <MButton outlined @click="toggleDarkMode">Toggle Dark Mode</MButton>
+          <MButton outlined @click="$mana.toggleDarkMode()"
+            >Toggle Dark Mode</MButton
+          >
         </template>
       </MNavbar>
     </template>
