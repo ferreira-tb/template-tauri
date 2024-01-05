@@ -4,7 +4,7 @@ export default defineConfig({
   force: true,
   write: true,
   includeLocked: true,
-  install: false,
+  install: true,
   packageMode: {
     vue: 'ignore',
     '/manatsu/': 'major'

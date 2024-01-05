@@ -3,11 +3,12 @@
     "beforeDevCommand": "pnpm run vite:dev",
     "beforeBuildCommand": "pnpm run vite:build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "distDir": "../dist",
+    "withGlobalTauri": false
   },
   "package": {
     "productName": "template-tauri",
-    "version": "0.1.20"
+    "version": "0.1.21"
   },
   "tauri": {
     "allowlist": {
