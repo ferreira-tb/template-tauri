@@ -13,9 +13,9 @@ import { MBrand, MButton, MNavbar, MScaffold } from 'manatsu';
         </template>
 
         <template #end>
-          <MButton outlined @click="$mana.toggleDarkMode()"
-            >Toggle Dark Mode</MButton
-          >
+          <MButton outlined @click="$mana.toggleDarkMode()">
+            Toggle Dark Mode
+          </MButton>
         </template>
       </MNavbar>
     </template>
