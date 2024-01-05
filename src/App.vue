@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { MNavbar, MScaffold } from 'manatsu';
-import MainView from './views/MainView.vue';
 </script>
 
 <template>
@@ -9,6 +8,8 @@ import MainView from './views/MainView.vue';
       <MNavbar title="Hello, Manatsu!" />
     </template>
 
-    <MainView />
+    <RouterView #default="{ Component }">
+      <component :is="Component" />
+    </RouterView>
   </MScaffold>
 </template>
