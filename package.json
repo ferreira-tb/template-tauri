@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.14.0",
@@ -10,7 +10,6 @@
   },
   "scripts": {
     "build": "cargo tauri build",
-    "deps": "taze -f -w -l",
     "dev": "cargo tauri dev",
     "format": "prettier . --write && cargo fmt --manifest-path=src-tauri/Cargo.toml",
     "format-check": "prettier . --check",
