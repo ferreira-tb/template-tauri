@@ -9,7 +9,16 @@ import { MNavbar, MScaffold } from 'manatsu';
     </template>
 
     <RouterView #default="{ Component }">
-      <component :is="Component" />
+      <template v-if="Component">
+        <Transition mode="out-in">
+          <KeepAlive>
+            <Suspense>
+              <component :is="Component" />
+              <template #fallback>Loading...</template>
+            </Suspense>
+          </KeepAlive>
+        </Transition>
+      </template>
     </RouterView>
   </MScaffold>
 </template>
