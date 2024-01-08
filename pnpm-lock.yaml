@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@manatsu/sass':
-    specifier: ^0.2.10
-    version: 0.2.10(sass@1.69.7)
+    specifier: ^0.2.15
+    version: 0.2.15(sass@1.69.7)
   '@tb-dev/eslint-config':
     specifier: ^1.5.12
     version: 1.5.12(eslint@8.56.0)(typescript@5.3.3)
@@ -758,8 +758,8 @@ packages:
       vue-router: 4.2.5(vue@3.3.13)
     dev: false
 
-  /@manatsu/sass@0.2.10(sass@1.69.7):
-    resolution: {integrity: sha512-KmgmyE1V12RqffTH7/MRHXL2OZmLt7mJGVlyN0I4HOdDQV2y9eoMhw8E3yb/wmGTjsZTiExnkNbh/wVGgEERJQ==}
+  /@manatsu/sass@0.2.15(sass@1.69.7):
+    resolution: {integrity: sha512-FVdODZyWKwQsTO24M/5hQzdM/iXD6i9yZM5YHvqe3ORSv1QvBLOJtW1azyMx1YdPqym+1FQ0O6Kj4UHGp5ginQ==}
     peerDependencies:
       sass: ^1.69.0
     dependencies:
