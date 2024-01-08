@@ -30,7 +30,7 @@
   "devDependencies": {
     "@manatsu/sass": "^0.2.10",
     "@tb-dev/eslint-config": "^1.5.12",
-    "@types/node": "^20.10.6",
+    "@types/node": "^20.10.7",
     "@vitejs/plugin-vue": "^5.0.2",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
