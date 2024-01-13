@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { MBrand, MButton, MNavbar, MScaffold, useDarkMode } from 'manatsu';
+import { MButton, MNavbar, MScaffold, useDarkMode } from 'manatsu';
 
 const darkMode = useDarkMode();
 const darkModeLabel = computed(() => (darkMode.value ? 'Light' : 'Dark'));
@@ -9,13 +9,7 @@ const darkModeLabel = computed(() => (darkMode.value ? 'Light' : 'Dark'));
 <template>
   <MScaffold>
     <template #header>
-      <MNavbar>
-        <template #start>
-          <MBrand>
-            <template #title>Hello, Manatsu!</template>
-          </MBrand>
-        </template>
-
+      <MNavbar title="Hello, Manatsu!">
         <template #end>
           <MButton variant="outlined" @click="$mana.toggleDarkMode()">
             {{ darkModeLabel }}
