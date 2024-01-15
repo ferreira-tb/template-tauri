@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.1.31",
+  "version": "0.1.32",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.14.1",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "cargo tauri build",
     "dev": "cargo tauri dev",
-    "format": "prettier . --write && cargo fmt --manifest-path=src-tauri/Cargo.toml",
+    "format": "prettier . --write && cargo fmt",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky install",
