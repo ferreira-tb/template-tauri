@@ -14,7 +14,8 @@ app.use(router);
 app.use(pinia);
 app.use(manatsu);
 
-void router.push('/');
-void router.isReady().then(() => {
-  app.mount('#app');
-});
+router
+  .push('/')
+  .then(() => router.isReady())
+  .then(() => app.mount('#app'))
+  .catch((err: unknown) => console.error(err));
