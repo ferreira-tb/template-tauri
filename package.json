@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.1.35",
+  "version": "0.2.0",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.14.1",
@@ -22,24 +22,24 @@
   "dependencies": {
     "@tauri-apps/api": "^1.5.3",
     "@vueuse/core": "^10.7.2",
-    "manatsu": "^0.2.21",
+    "manatsu": "^0.3.5",
     "pinia": "^2.1.7",
-    "vue": "~3.3.13",
+    "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^1.6.0",
-    "@types/node": "^20.11.2",
-    "@vitejs/plugin-vue": "~4.6.2",
+    "@tb-dev/eslint-config": "^1.6.2",
+    "@types/node": "^20.11.5",
+    "@vitejs/plugin-vue": "^5.0.3",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.2",
+    "prettier": "^3.2.4",
     "taze": "^0.13.1",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
-    "vite": "^5.0.11",
-    "vite-plugin-vue-devtools": "^7.0.10",
+    "vite": "^5.0.12",
+    "vite-plugin-vue-devtools": "^7.0.11",
     "vue-tsc": "^1.8.27"
   }
 }

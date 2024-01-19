@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "template-tauri",
-    "version": "0.1.35"
+    "version": "0.2.0"
   },
   "tauri": {
     "allowlist": {
@@ -34,11 +34,13 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": true,
+        "label": "main",
         "title": "Manatsu",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "visible": false,
+        "fullscreen": false,
+        "resizable": true
       }
     ]
   }

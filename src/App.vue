@@ -1,21 +1,19 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { MButton, MNavbar, MScaffold, useDarkMode } from 'manatsu';
+import { MButton, MScaffold, MTopAppbar, useDarkMode } from 'manatsu';
 
 const darkMode = useDarkMode();
-const darkModeLabel = computed(() => (darkMode.value ? 'Light' : 'Dark'));
 </script>
 
 <template>
-  <MScaffold>
-    <template #header>
-      <MNavbar title="Hello, Manatsu!">
+  <MScaffold default-border="none">
+    <template #top-bar>
+      <MTopAppbar title="Hello, Manatsu!">
         <template #end>
           <MButton variant="outlined" @click="$mana.toggleDarkMode()">
-            {{ darkModeLabel }}
+            {{ darkMode ? 'Light' : 'Dark' }}
           </MButton>
         </template>
-      </MNavbar>
+      </MTopAppbar>
     </template>
 
     <RouterView #default="{ Component }">

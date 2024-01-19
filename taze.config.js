@@ -6,8 +6,6 @@ export default defineConfig({
   includeLocked: true,
   install: false,
   packageMode: {
-    vue: 'ignore',
-    '@vitejs/plugin-vue': 'ignore',
     '/manatsu/': 'major'
   }
 });
