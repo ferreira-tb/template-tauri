@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MButton, MScaffold, MTopAppbar, useDarkMode } from 'manatsu';
+import { useDarkMode } from 'manatsu';
 
 const darkMode = useDarkMode();
 </script>

@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.2.1"
+version = "0.3.0"
 
 [package.description]
 workspace = true
@@ -15,6 +15,9 @@ workspace = true
 workspace = true
 
 [package.edition]
+workspace = true
+
+[package.publish]
 workspace = true
 
 [build-dependencies.tauri-build]

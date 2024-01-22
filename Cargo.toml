@@ -8,4 +8,4 @@ authors = ["You <email@example.com>"]
 license = "MIT"
 repository = ""
 edition = "2021"
-
+publish = false
