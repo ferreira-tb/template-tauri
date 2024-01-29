@@ -1893,9 +1893,9 @@ dependencies = [
 
 [[package]]
 name = "manatsu"
-version = "0.3.8"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9bf9516a63982b9b3e667399a918f4d9c5a62202a1cc845bc9160fcadde0f80d"
+checksum = "9772ae8009f0d857767d7f7a4b5a152154f1a1bd7fa29313bcb5ddbf3fe9620c"
 dependencies = [
  "anyhow",
  "clap",
@@ -1909,7 +1909,9 @@ dependencies = [
  "regex",
  "serde",
  "serde_json",
+ "toml 0.8.8",
  "ureq",
+ "walkdir",
  "zip",
 ]
 
@@ -3468,9 +3470,9 @@ dependencies = [
 
 [[package]]
 name = "tauri-plugin-manatsu"
-version = "0.3.8"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db1943fc4d8c11354eb72a2d6c2a00b27acfa5bf26b676d0a57b4d6ed413d07f"
+checksum = "377daccab8ef8311b3beb8cee96821c8a4fec7ffe3ddfc307fe965146be5ab29"
 dependencies = [
  "manatsu",
  "serde",
