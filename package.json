@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.15.4",
@@ -14,7 +14,7 @@
     "format": "prettier . --write && cargo fmt",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
-    "prepare": "husky install",
+    "prepare": "husky",
     "type-check": "vue-tsc --noEmit",
     "vite:dev": "vite",
     "vite:build": "pnpm run type-check && vite build"
