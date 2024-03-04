@@ -22,7 +22,7 @@
   "dependencies": {
     "@tauri-apps/api": "^1.5.3",
     "@vueuse/core": "^10.9.0",
-    "manatsu": "^0.4.13",
+    "manatsu": "^0.4.15",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
