@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.4.6"
+version = "0.5.0"
 
 [package.description]
 workspace = true
@@ -26,12 +26,12 @@ features = []
 
 [dependencies]
 serde_json = "1.0.114"
-tauri-plugin-manatsu = "0.4.1"
+tauri-plugin-manatsu = "0.4.12"
 tauri-plugin-window-state = "0.1.0"
 thiserror = "1.0.57"
 
 [dependencies.tauri]
-version = "1.6.0"
+version = "1.6.1"
 features = []
 
 [dependencies.serde]

@@ -1,5 +1,5 @@
 <template>
   <main>
-    <MButton>Hello World!</MButton>
+    <m-button>Hello World!</m-button>
   </main>
 </template>

@@ -5,28 +5,19 @@ const darkMode = useDarkMode();
 </script>
 
 <template>
-  <MScaffold default-border="none">
+  <m-scaffold default-border="none">
     <template #top-bar>
-      <MTopAppbar title="Hello, Manatsu!">
+      <m-top-appbar title="Hello, Manatsu!">
         <template #end>
-          <MButton variant="outlined" @click="$mana.toggleDarkMode()">
+          <m-button variant="outlined" @click="$mana.toggleDarkMode()">
             {{ darkMode ? 'Light' : 'Dark' }}
-          </MButton>
+          </m-button>
         </template>
-      </MTopAppbar>
+      </m-top-appbar>
     </template>
 
-    <RouterView #default="{ Component }">
-      <template v-if="Component">
-        <Transition mode="out-in">
-          <KeepAlive>
-            <Suspense>
-              <component :is="Component" />
-              <template #fallback>Loading...</template>
-            </Suspense>
-          </KeepAlive>
-        </Transition>
-      </template>
-    </RouterView>
-  </MScaffold>
+    <template #default>
+      <router-view />
+    </template>
+  </m-scaffold>
 </template>

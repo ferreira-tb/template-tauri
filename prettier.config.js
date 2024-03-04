@@ -10,5 +10,6 @@ export default {
   bracketSpacing: true,
   bracketSameLine: false,
   arrowParens: 'always',
+  endOfLine: 'lf',
   vueIndentScriptAndStyle: false
 };

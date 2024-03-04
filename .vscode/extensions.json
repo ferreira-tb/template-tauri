@@ -10,7 +10,6 @@
     "rust-lang.rust-analyzer",
     "bradlc.vscode-tailwindcss",
     "tauri-apps.tauri-vscode",
-    "vue.vscode-typescript-vue-plugin",
     "vscode-icons-team.vscode-icons",
     "vue.volar",
     "redhat.vscode-yaml"
