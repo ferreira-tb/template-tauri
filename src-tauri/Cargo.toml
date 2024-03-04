@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.5.0"
+version = "0.5.1"
 
 [package.description]
 workspace = true
@@ -15,6 +15,9 @@ workspace = true
 workspace = true
 
 [package.edition]
+workspace = true
+
+[package.rust-version]
 workspace = true
 
 [package.publish]
@@ -37,6 +40,21 @@ features = []
 [dependencies.serde]
 version = "1.0.197"
 features = ["derive"]
+
+[dependencies.sea-orm]
+version = "0.12.14"
+features = [
+    "macros",
+    "runtime-tokio-rustls",
+    "sqlx-sqlite",
+]
+
+[dependencies.tokio]
+version = "1.36.0"
+features = [
+    "macros",
+    "rt-multi-thread",
+]
 
 [features]
 custom-protocol = ["tauri/custom-protocol"]

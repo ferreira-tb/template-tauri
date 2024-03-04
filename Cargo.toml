@@ -8,4 +8,5 @@ authors = ["You <email@example.com>"]
 license = "MIT"
 repository = ""
 edition = "2021"
+rust-version = "1.76"
 publish = false
