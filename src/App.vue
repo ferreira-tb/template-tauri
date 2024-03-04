@@ -5,9 +5,9 @@ const darkMode = useDarkMode();
 </script>
 
 <template>
-  <m-scaffold default-border="none">
-    <template #top-bar>
-      <m-top-appbar title="Hello, Manatsu!">
+  <m-scaffold>
+    <template #top>
+      <m-top-appbar>
         <template #end>
           <m-button variant="outlined" @click="$mana.toggleDarkMode()">
             {{ darkMode ? 'Light' : 'Dark' }}
@@ -17,7 +17,13 @@ const darkMode = useDarkMode();
     </template>
 
     <template #default>
-      <router-view />
+      <router-view #default="{ Component }">
+        <template v-if="Component">
+          <keep-alive>
+            <component :is="Component" />
+          </keep-alive>
+        </template>
+      </router-view>
     </template>
   </m-scaffold>
 </template>
