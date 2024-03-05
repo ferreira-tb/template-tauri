@@ -2,9 +2,11 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod command;
+mod error;
 
 use sea_orm::prelude::DatabaseConnection;
 use sea_orm::Database;
+pub use error::{Error, Result};
 
 const DATABASE_URL: &str = "sqlite::memory:";
 
