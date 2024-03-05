@@ -1,5 +1,5 @@
 ```bash
-cargo install manatsu tauri-cli
+cargo install manatsu tauri-cli sea-orm-cli
 manatsu create
 
 cd PROJECT_NAME
