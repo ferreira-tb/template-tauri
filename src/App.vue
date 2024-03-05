@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { useDarkMode, useInvoke } from 'manatsu';
+import { inject } from 'vue';
+import { symbols, useInvoke } from 'manatsu';
 import { Command } from './utils';
 
-const darkMode = useDarkMode();
+const darkMode = inject(symbols.darkMode);
 const { state: version } = useInvoke<string>(Command.Version);
 </script>
 
