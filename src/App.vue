@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { inject } from 'vue';
-import { symbols, useInvoke } from 'manatsu';
-import { Command } from './utils';
+import { symbols } from 'manatsu';
+import { useInvoke } from './utils';
 
 const darkMode = inject(symbols.darkMode);
-const { state: version } = useInvoke<string>(Command.Version);
+const { state: version } = useInvoke<string | null>('Version', {
+  initial: null
+});
 </script>
 
 <template>
