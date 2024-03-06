@@ -4,9 +4,10 @@ pub type Result<T> = std::result::Result<T, Error>;
 pub enum Error {
   #[error(transparent)]
   Database(#[from] sea_orm::error::DbErr),
-
   #[error(transparent)]
   Io(#[from] std::io::Error),
+  #[error(transparent)]
+  Other(#[from] anyhow::Error),
 }
 
 impl serde::Serialize for Error {
