@@ -9,6 +9,8 @@ mod error;
 pub use error::{Error, Result};
 use sea_orm::prelude::DatabaseConnection;
 
+pub type State<'a> = tauri::State<'a, AppState>;
+
 pub struct AppState {
   pub db: DatabaseConnection,
 }
