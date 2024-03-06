@@ -5,8 +5,7 @@
 mod command;
 pub mod database;
 mod error;
-
-pub use error::{Error, Result};
+pub mod prelude;
 
 pub type State<'a> = tauri::State<'a, AppState>;
 
