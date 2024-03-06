@@ -3,16 +3,15 @@
 #![allow(async_fn_in_trait)]
 
 mod command;
-mod database;
+pub mod database;
 mod error;
 
 pub use error::{Error, Result};
-use sea_orm::prelude::DatabaseConnection;
 
 pub type State<'a> = tauri::State<'a, AppState>;
 
 pub struct AppState {
-  pub db: DatabaseConnection,
+  pub db: sea_orm::DatabaseConnection,
 }
 
 #[tokio::main]

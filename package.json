@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.5.13",
+  "version": "0.5.14",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.15.4",

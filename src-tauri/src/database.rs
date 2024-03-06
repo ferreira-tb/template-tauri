@@ -1,4 +1,5 @@
 // pub mod entities;
+pub mod prelude;
 
 // pub use entities::prelude::*;
 use sea_orm::prelude::DatabaseConnection;
