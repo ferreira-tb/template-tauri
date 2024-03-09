@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.5.15",
+  "version": "0.6.0",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.15.4",
@@ -22,18 +22,21 @@
     "vite:build": "pnpm run type-check && vite build"
   },
   "dependencies": {
-    "@manatsu/tauri-plugin": "^0.4.19",
+    "@manatsu/tauri-plugin": "^0.5.1",
     "@tauri-apps/api": "^1.5.3",
     "@vueuse/core": "^10.9.0",
-    "manatsu": "^0.4.19",
+    "manatsu": "^0.5.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^2.2.0",
+    "@manatsu/style": "^0.5.1",
+    "@tb-dev/auto-import-config": "^1.0.8",
+    "@tb-dev/eslint-config": "^3.0.1",
     "@tb-dev/utility-types": "^1.2.0",
-    "@types/node": "^20.11.24",
+    "@tb-dev/vue-import-config": "^1.0.2",
+    "@types/node": "^20.11.25",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
@@ -42,12 +45,14 @@
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-css-order": "^2.0.1",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
     "vite": "^5.1.5",
     "vite-plugin-vue-devtools": "^7.0.16",
-    "vue-tsc": "^2.0.5"
+    "vue-tsc": "^2.0.6"
   }
 }

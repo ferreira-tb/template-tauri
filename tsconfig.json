@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*", "src/**/*.vue"],
+  "include": ["src/**/*", "src/**/*.vue", "types/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

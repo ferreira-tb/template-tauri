@@ -1,5 +1,6 @@
-import 'manatsu/style';
-import './assets/style.css';
+import 'manatsu/components/style';
+import '@manatsu/style/themes/mana';
+import '@/assets/style.css';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import { createManatsu, registerComponents } from 'manatsu';

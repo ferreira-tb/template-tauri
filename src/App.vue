@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { inject } from 'vue';
 import { symbols } from 'manatsu';
-import { useInvoke } from './utils';
 
 const darkMode = inject(symbols.darkMode);
 const { state: version } = useInvoke<string | null>('Version', {
