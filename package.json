@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@manatsu/style": "^0.5.1",
-    "@tb-dev/auto-import-config": "^1.0.8",
+    "@tb-dev/auto-import-config": "^1.0.12",
     "@tb-dev/eslint-config": "^3.0.1",
     "@tb-dev/utility-types": "^1.2.0",
     "@tb-dev/vue-import-config": "^1.0.2",
