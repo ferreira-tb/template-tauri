@@ -3,9 +3,7 @@ import { inject } from 'vue';
 import { symbols } from 'manatsu';
 
 const darkMode = inject(symbols.darkMode);
-const { state: version } = useInvoke<string | null>('Version', {
-  initial: null
-});
+const version = useInvoke<string | null>('Version', null);
 </script>
 
 <template>
