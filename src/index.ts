@@ -17,8 +17,4 @@ app.use(manatsu);
 
 registerComponents(app);
 
-router
-  .push('/')
-  .then(() => router.isReady())
-  .then(() => app.mount('#app'))
-  .catch((err: unknown) => console.error(err));
+app.mount('#app');
