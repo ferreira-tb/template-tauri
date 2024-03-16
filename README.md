@@ -37,7 +37,7 @@ sea-orm-cli migrate reset
 [`DATABASE_URL`](https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli/#configure-environment) must be set as an environment variable.
 
 ```sh
-sea-orm-cli generate entity -o src-tauri/src/database/entities --with-serde both
+sea-orm-cli generate entity -o src-tauri/src/database/entities --with-serde both --model-extra-attributes "serde(rename_all(serialize = \"camelCase\"))"
 ```
 
 ## License
