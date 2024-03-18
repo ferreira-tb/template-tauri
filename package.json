@@ -1,6 +1,6 @@
 {
   "name": "template-tauri",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Tauri template for Manatsu",
   "type": "module",
   "packageManager": "pnpm@8.15.4",
@@ -22,6 +22,7 @@
     "vite:build": "pnpm run type-check && vite build"
   },
   "dependencies": {
+    "@manatsu/style": "^0.5.5",
     "@manatsu/tauri-plugin": "^0.5.5",
     "@tauri-apps/api": "^1.5.3",
     "@vueuse/core": "^10.9.0",
@@ -31,7 +32,6 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@manatsu/style": "^0.5.5",
     "@tb-dev/auto-import-config": "^1.1.1",
     "@tb-dev/eslint-config": "^3.0.2",
     "@tb-dev/utility-types": "^1.2.1",
