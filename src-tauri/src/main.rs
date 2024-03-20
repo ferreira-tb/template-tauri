@@ -7,9 +7,6 @@ pub mod database;
 mod error;
 pub mod prelude;
 
-use std::path::PathBuf;
-use std::sync::OnceLock;
-use tauri::api::path::{app_cache_dir, app_data_dir};
 use tauri::Manager;
 
 pub struct AppState {
@@ -18,25 +15,14 @@ pub struct AppState {
 
 pub type State<'a> = tauri::State<'a, AppState>;
 
-pub static APP_CACHE_DIR: OnceLock<PathBuf> = OnceLock::new();
-pub static APP_DATA_DIR: OnceLock<PathBuf> = OnceLock::new();
-
 #[tokio::main]
 async fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
     .setup(|app| {
-      APP_CACHE_DIR
-        .set(app_cache_dir(&app.config()).unwrap())
-        .unwrap();
-
-      APP_DATA_DIR
-        .set(app_data_dir(&app.config()).unwrap())
-        .unwrap();
-
       let state = AppState {
-        database: database::connect().unwrap(),
+        database: database::connect(&app.config()).unwrap(),
       };
 
       app.manage(state);
