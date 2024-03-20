@@ -7,16 +7,19 @@ pub mod database;
 mod error;
 pub mod prelude;
 
-use std::sync::Arc;
-use std::thread;
-use tauri::async_runtime::block_on;
+use std::path::PathBuf;
+use std::sync::OnceLock;
+use tauri::api::path::{app_cache_dir, app_data_dir};
 use tauri::Manager;
+
+pub struct AppState {
+  pub database: sea_orm::DatabaseConnection,
+}
 
 pub type State<'a> = tauri::State<'a, AppState>;
 
-pub struct AppState {
-  pub db: sea_orm::DatabaseConnection,
-}
+pub static APP_CACHE_DIR: OnceLock<PathBuf> = OnceLock::new();
+pub static APP_DATA_DIR: OnceLock<PathBuf> = OnceLock::new();
 
 #[tokio::main]
 async fn main() {
@@ -24,11 +27,16 @@ async fn main() {
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
     .setup(|app| {
-      let config = Arc::clone(&app.config());
-      let handle = thread::spawn(move || block_on(database::connect(config)).unwrap());
+      APP_CACHE_DIR
+        .set(app_cache_dir(&app.config()).unwrap())
+        .unwrap();
+
+      APP_DATA_DIR
+        .set(app_data_dir(&app.config()).unwrap())
+        .unwrap();
 
       let state = AppState {
-        db: handle.join().unwrap(),
+        database: database::connect().unwrap(),
       };
 
       app.manage(state);
