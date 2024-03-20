@@ -30,8 +30,8 @@ features = []
 [dependencies]
 anyhow = "1.0.81"
 serde_json = "1.0.114"
-tauri-plugin-manatsu = "0.5.3"
-tauri-plugin-window-state = "0.1.0"
+tauri-plugin-manatsu = "0.5.9"
+tauri-plugin-window-state = "0.1.1"
 thiserror = "1.0.58"
 
 [dependencies.tauri]
