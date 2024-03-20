@@ -7,6 +7,11 @@ pub mod database;
 mod error;
 pub mod prelude;
 
+use std::sync::Arc;
+use std::thread;
+use tauri::async_runtime::block_on;
+use tauri::Manager;
+
 pub type State<'a> = tauri::State<'a, AppState>;
 
 pub struct AppState {
@@ -15,13 +20,21 @@ pub struct AppState {
 
 #[tokio::main]
 async fn main() {
-  let db = database::connect().await;
-  let state = AppState { db };
-
   tauri::Builder::default()
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
-    .manage(state)
+    .setup(|app| {
+      let config = Arc::clone(&app.config());
+      let handle = thread::spawn(move || block_on(database::connect(config)).unwrap());
+
+      let state = AppState {
+        db: handle.join().unwrap(),
+      };
+
+      app.manage(state);
+
+      Ok(())
+    })
     .invoke_handler(tauri::generate_handler![command::version])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
