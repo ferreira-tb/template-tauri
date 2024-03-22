@@ -1,4 +1,7 @@
 {
+  "productName": "template-tauri",
+  "version": "0.7.2",
+  "identifier": "com.manatsu.dev",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
     "beforeBuildCommand": "pnpm run vite:build",
@@ -16,10 +19,6 @@
       "icons/icon.ico"
     ]
   },
-  "productName": "template-tauri",
-  "version": "0.7.1",
-  "identifier": "com.manatsu.dev",
-  "plugins": {},
   "app": {
     "withGlobalTauri": false,
     "windows": [
@@ -36,5 +35,6 @@
     "security": {
       "csp": null
     }
-  }
+  },
+  "plugins": {}
 }
