@@ -6,11 +6,15 @@ pub mod prelude;
 use crate::error::Result;
 use sea_orm::{ConnectOptions, Database, DatabaseConnection};
 use std::thread;
-use tauri::api::path::app_data_dir;
-use tauri::Config;
+use tauri::{Manager, Runtime};
 
-pub fn connect(config: &Config) -> Result<DatabaseConnection> {
-  let path = app_data_dir(config).unwrap().join("RENAME_THIS.db");
+pub fn connect<M, R>(app: &M) -> Result<DatabaseConnection>
+where
+  R: Runtime,
+  M: Manager<R>,
+{
+  let resolver = app.path();
+  let path = resolver.app_data_dir().unwrap().join("RENAME_THIS.db");
   let url = format!("sqlite://{}?mode=rwc", path.to_str().unwrap());
 
   let handle = thread::spawn(move || {

@@ -25,8 +25,13 @@ target/
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
 
+# Tauri
+**/gen/schemas
+
 # Others
+**/*vite*timestamp*
 coverage/
 .eslintcache
 .stylelintcache
 config.json
+.env

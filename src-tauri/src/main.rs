@@ -8,9 +8,10 @@ mod error;
 pub mod prelude;
 
 use tauri::Manager;
+use sea_orm::DatabaseConnection;
 
 pub struct AppState {
-  pub database: sea_orm::DatabaseConnection,
+  pub database: DatabaseConnection,
 }
 
 pub type State<'a> = tauri::State<'a, AppState>;
@@ -22,7 +23,7 @@ async fn main() {
     .plugin(tauri_plugin_manatsu::init())
     .setup(|app| {
       let state = AppState {
-        database: database::connect(&app.config()).unwrap(),
+        database: database::connect(app).unwrap(),
       };
 
       app.manage(state);

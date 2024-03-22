@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { symbols } from 'manatsu';
-
 const darkMode = inject(symbols.darkMode);
 const version = useInvoke<string | null>('Version', null);
 </script>
