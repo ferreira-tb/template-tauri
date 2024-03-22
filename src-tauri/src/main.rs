@@ -6,15 +6,10 @@ mod command;
 pub mod database;
 mod error;
 pub mod prelude;
+mod state;
 
+use state::AppState;
 use tauri::Manager;
-use sea_orm::DatabaseConnection;
-
-pub struct AppState {
-  pub database: DatabaseConnection,
-}
-
-pub type State<'a> = tauri::State<'a, AppState>;
 
 #[tokio::main]
 async fn main() {
@@ -22,11 +17,9 @@ async fn main() {
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
     .setup(|app| {
-      let state = AppState {
+      app.manage(AppState {
         database: database::connect(app).unwrap(),
-      };
-
-      app.manage(state);
+      });
 
       Ok(())
     })
