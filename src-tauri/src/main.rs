@@ -23,7 +23,7 @@ async fn main() {
 
       Ok(())
     })
-    .invoke_handler(tauri::generate_handler![command::version])
+    .invoke_handler(tauri::generate_handler![command::hello_manatsu])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

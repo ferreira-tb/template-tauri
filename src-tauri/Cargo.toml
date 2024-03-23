@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.7.4"
+version = "0.7.5"
 
 [package.description]
 workspace = true

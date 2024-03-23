@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { getVersion } from '@tauri-apps/api/app';
+
 const darkMode = inject(symbols.darkMode);
-const version = useInvoke<string | null>('Version', null);
+const { state: version } = useAsyncState<string | null>(getVersion, null);
 </script>
 
 <template>

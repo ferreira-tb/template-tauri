@@ -1,4 +1,4 @@
 #[tauri::command]
-pub async fn version(app: tauri::AppHandle) -> String {
-  app.config().version.clone().unwrap()
+pub async fn hello_manatsu() -> String {
+  String::from("Hello, Manatsu!")
 }
