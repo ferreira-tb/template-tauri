@@ -1,6 +1,6 @@
 {
   "productName": "template-tauri",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "identifier": "com.manatsu.dev",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
