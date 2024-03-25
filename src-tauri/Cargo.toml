@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.7.7"
+version = "0.7.8"
 
 [package.description]
 workspace = true
@@ -31,6 +31,7 @@ features = []
 anyhow = "1.0.81"
 chrono = "0.4.35"
 futures = "0.3.30"
+itertools = "0.12.1"
 serde_json = "1.0.114"
 tauri-plugin-manatsu = "0.6.2"
 tauri-plugin-window-state = "2.0.0-beta.3"
