@@ -2,11 +2,3 @@
 members = ["src-tauri"]
 resolver = "2"
 
-[workspace.package]
-description = "A Manatsu App"
-authors = ["You <email@example.com>"]
-license = "MIT"
-repository = ""
-edition = "2021"
-rust-version = "1.76"
-publish = false

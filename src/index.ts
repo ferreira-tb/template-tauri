@@ -9,7 +9,7 @@ import { createManatsu, registerComponents } from 'manatsu';
 
 const app = createApp(App);
 const pinia = createPinia();
-const manatsu = createManatsu();
+const manatsu = createManatsu({ router });
 
 app.use(router);
 app.use(pinia);

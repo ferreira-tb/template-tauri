@@ -1,3 +1,4 @@
+import { RouteName } from '@/router/route';
 import { createRouter, createWebHistory } from 'vue-router';
 
 export const router = createRouter({
@@ -5,8 +6,8 @@ export const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
+      name: RouteName.Home,
+      component: () => import('../views/Home.vue')
     }
   ]
 });

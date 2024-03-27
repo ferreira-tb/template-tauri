@@ -1,11 +1,3 @@
-import { defineInvoke } from 'manatsu';
-import { Command as ManatsuCommand } from '@manatsu/tauri-plugin';
-
-enum Command {
-  Version = 'version'
+export enum Command {
+  HelloManatsu = 'hello_manatsu'
 }
-
-export const useInvoke = defineInvoke({
-  ...ManatsuCommand,
-  ...Command
-});

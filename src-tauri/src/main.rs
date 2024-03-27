@@ -8,7 +8,7 @@ mod error;
 pub mod prelude;
 mod state;
 
-use state::AppState;
+use state::prelude::*;
 use tauri::Manager;
 
 #[tokio::main]

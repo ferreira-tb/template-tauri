@@ -1,6 +1,10 @@
 use serde::ser::Serializer;
 use serde::Serialize;
 
+pub mod prelude {
+  pub use super::{Error, Result};
+}
+
 pub type Result<T> = std::result::Result<T, Error>;
 
 #[derive(Debug, thiserror::Error)]
