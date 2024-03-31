@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getVersion } from '@tauri-apps/api/app';
 
-const darkMode = inject(symbols.darkMode);
+const darkMode = injectStrict(symbols.darkMode);
 const { state: version } = useAsyncState<string | null>(getVersion, null);
 </script>
 
@@ -16,7 +16,7 @@ const { state: version } = useAsyncState<string | null>(getVersion, null);
           </div>
         </template>
         <template #end>
-          <m-button variant="outlined" @click="$mana.toggleDarkMode()">
+          <m-button @click="$mana.toggleDarkMode()">
             {{ darkMode ? 'Light' : 'Dark' }}
           </m-button>
         </template>

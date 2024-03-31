@@ -13,11 +13,14 @@ declare global {
   const convertFileSrc: typeof import('@tauri-apps/api/core')['convertFileSrc']
   const css: typeof import('@manatsu/style')['css']
   const customRef: typeof import('vue')['customRef']
+  const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
+  const defineCustomElement: typeof import('vue')['defineCustomElement']
   const effectScope: typeof import('vue')['effectScope']
   const extendRef: typeof import('@vueuse/core')['extendRef']
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentApp: typeof import('manatsu')['getCurrentApp']
+  const getCurrentScope: typeof import('vue')['getCurrentScope']
   const getRouter: typeof import('manatsu')['getRouter']
   const h: typeof import('vue')['h']
   const handleError: typeof import('manatsu')['handleError']
@@ -31,6 +34,9 @@ declare global {
   const invokeOnKeyUp: typeof import('manatsu')['invokeOnKeyUp']
   const isNavigationFailure: typeof import('vue-router')['isNavigationFailure']
   const isNullish: typeof import('@tb-dev/utils')['isNullish']
+  const isProxy: typeof import('vue')['isProxy']
+  const isReactive: typeof import('vue')['isReactive']
+  const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
   const listen: typeof import('@tauri-apps/api/event')['listen']
   const markRaw: typeof import('vue')['markRaw']
@@ -47,6 +53,7 @@ declare global {
   const onBeforeUpdate: typeof import('vue')['onBeforeUpdate']
   const onClickOutside: typeof import('@vueuse/core')['onClickOutside']
   const onDeactivated: typeof import('vue')['onDeactivated']
+  const onErrorCaptured: typeof import('vue')['onErrorCaptured']
   const onKeyDown: typeof import('manatsu')['onKeyDown']
   const onKeyPressed: typeof import('manatsu')['onKeyPressed']
   const onKeyStroke: typeof import('manatsu')['onKeyStroke']
@@ -59,6 +66,7 @@ declare global {
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
   const shallowReactive: typeof import('vue')['shallowReactive']
+  const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
   const storeToRefs: typeof import('pinia')['storeToRefs']
   const symbols: typeof import('manatsu')['symbols']
@@ -88,9 +96,11 @@ declare global {
   const useArraySome: typeof import('@vueuse/core')['useArraySome']
   const useArrayUnique: typeof import('@vueuse/core')['useArrayUnique']
   const useAsyncState: typeof import('@vueuse/core')['useAsyncState']
+  const useAttrs: typeof import('vue')['useAttrs']
   const useCurrentElement: typeof import('@vueuse/core')['useCurrentElement']
   const useCycleList: typeof import('@vueuse/core')['useCycleList']
   const useDialog: typeof import('manatsu')['useDialog']
+  const useDocumentVisibility: typeof import('@vueuse/core')['useDocumentVisibility']
   const useDraggable: typeof import('@vueuse/core')['useDraggable']
   const useElementBounding: typeof import('@vueuse/core')['useElementBounding']
   const useElementHover: typeof import('@vueuse/core')['useElementHover']
@@ -118,7 +128,10 @@ declare global {
   const useRouteQuery: typeof import('@vueuse/router')['useRouteQuery']
   const useRouter: typeof import('vue-router')['useRouter']
   const useSessionStorage: typeof import('@vueuse/core')['useSessionStorage']
+  const useSlots: typeof import('vue')['useSlots']
   const useStorage: typeof import('@vueuse/core')['useStorage']
+  const useStyleTag: typeof import('@vueuse/core')['useStyleTag']
+  const useWindowFocus: typeof import('@vueuse/core')['useWindowFocus']
   const useWindowScroll: typeof import('@vueuse/core')['useWindowScroll']
   const useWindowSize: typeof import('@vueuse/core')['useWindowSize']
   const watch: typeof import('vue')['watch']
@@ -140,9 +153,12 @@ declare global {
 // for type re-export
 declare global {
   // @ts-ignore
+  export type { ComputedSymbol, MaybeNullishRef, RefSymbol, ShallowRefSymbol, WritableRefSymbol, WritableShallowRefSymbol } from 'manatsu'
+  import('manatsu')
+  // @ts-ignore
   export type { MaybeArray, MaybePromise, Nullish, PartialNullish } from '@tb-dev/utility-types'
   import('@tb-dev/utility-types')
   // @ts-ignore
-  export type { CSSProperties, Component, ComponentInstance, MaybeRefOrGetter, Ref, ShallowRef, VNode } from 'vue'
+  export type { CSSProperties, Component, ComponentInstance, ComputedRef, InjectionKey, MaybeRefOrGetter, Ref, ShallowRef, VNode } from 'vue'
   import('vue')
 }

@@ -1,4 +1,4 @@
-import { RouteName } from '@/router/route';
+import { RouteName } from '@/router/routes';
 import { createRouter, createWebHistory } from 'vue-router';
 
 export const router = createRouter({
