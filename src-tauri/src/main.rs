@@ -11,8 +11,7 @@ mod state;
 use state::prelude::*;
 use tauri::Manager;
 
-#[tokio::main]
-async fn main() {
+fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
