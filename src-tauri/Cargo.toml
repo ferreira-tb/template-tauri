@@ -10,7 +10,7 @@ rust-version = "1.77"
 publish = false
 
 [build-dependencies.tauri-build]
-version = "2.0.0-beta.10"
+version = "2.0.0-beta.11"
 features = []
 
 [dependencies]
@@ -20,7 +20,7 @@ futures = "0.3.30"
 itertools = "0.12.1"
 serde_json = "1.0.115"
 tauri-plugin-manatsu = "0.7.2"
-tauri-plugin-window-state = "2.0.0-beta.3"
+tauri-plugin-window-state = "2.0.0-beta.4"
 thiserror = "1.0.58"
 
 [dependencies.strum]
@@ -28,7 +28,7 @@ version = "0.26.2"
 features = ["derive"]
 
 [dependencies.tauri]
-version = "2.0.0-beta.13"
+version = "2.0.0-beta.14"
 features = []
 
 [dependencies.serde]
