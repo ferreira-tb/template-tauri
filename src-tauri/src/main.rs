@@ -6,18 +6,22 @@ mod command;
 pub mod database;
 mod error;
 pub mod prelude;
-mod state;
 
-use state::prelude::*;
+use sea_orm::DatabaseConnection;
 use tauri::Manager;
+
+pub struct AppState {
+  pub db: DatabaseConnection,
+}
 
 fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_window_state::Builder::default().build())
     .plugin(tauri_plugin_manatsu::init())
     .setup(|app| {
+      let handle = app.handle();
       app.manage(AppState {
-        database: database::connect(app).unwrap(),
+        db: database::connect(handle).unwrap(),
       });
 
       Ok(())

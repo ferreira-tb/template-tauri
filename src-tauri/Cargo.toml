@@ -1,6 +1,6 @@
 [package]
 name = "template-tauri"
-version = "0.9.2"
+version = "0.9.3"
 description = "A Manatsu App"
 authors = ["You <email@example.com>"]
 license = "MIT"
