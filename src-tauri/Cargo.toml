@@ -1,6 +1,6 @@
 [package]
 name = "tauri-template"
-version = "0.10.0"
+version = "0.10.1"
 description = "My Tauri app"
 authors = ["You <email@example.com>"]
 license = "MIT"
