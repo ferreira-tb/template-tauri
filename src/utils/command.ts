@@ -1,3 +1,3 @@
 export enum Command {
-  HelloManatsu = 'hello_manatsu'
+  HelloTauri = 'hello_tauri'
 }

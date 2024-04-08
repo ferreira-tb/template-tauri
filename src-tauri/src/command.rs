@@ -1,4 +1,4 @@
 #[tauri::command]
-pub async fn hello_manatsu() -> String {
-  String::from("Hello, Manatsu!")
+pub async fn hello_tauri() -> String {
+  String::from("Hello, Tauri!")
 }

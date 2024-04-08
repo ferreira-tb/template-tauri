@@ -1,7 +1,7 @@
 {
-  "productName": "template-tauri",
-  "version": "0.9.4",
-  "identifier": "manatsu.tauri",
+  "productName": "tauri-template",
+  "version": "0.10.0",
+  "identifier": "tbdev.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
     "beforeBuildCommand": "pnpm run vite:build",
@@ -24,7 +24,8 @@
     "windows": [
       {
         "label": "main",
-        "title": "Manatsu",
+        "title": "Tauri Template",
+        "url": "src/windows/main/index.html",
         "width": 800,
         "height": 600,
         "visible": false,

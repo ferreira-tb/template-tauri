@@ -32,6 +32,5 @@ target/
 **/*vite*timestamp*
 coverage/
 .eslintcache
-.stylelintcache
 config.json
 .env

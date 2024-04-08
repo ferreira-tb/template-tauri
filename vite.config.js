@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -10,7 +11,6 @@ import autoImportConfig from '@tb-dev/auto-import-config';
 const autoImportOptions = autoImportConfig({
   presets: {
     manatsu: true,
-    manatsuStyle: true,
     tauri: true,
     vueuseRouter: true
   }
@@ -33,6 +33,15 @@ export default defineConfig({
   },
   build: {
     emptyOutDir: true,
-    minify: false
+    minify: false,
+    rollupOptions: {
+      input: {
+        main: entry('main')
+      }
+    }
   }
 });
+
+function entry(name) {
+  return resolve(__dirname, `src/windows/${name}/index.html`);
+}

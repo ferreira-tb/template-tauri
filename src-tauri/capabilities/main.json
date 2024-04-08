@@ -5,9 +5,7 @@
   "permissions": [
     "app:allow-version",
     "event:allow-listen",
-    "manatsu:allow-error-log-path",
-    "manatsu:allow-read-error-logs",
-    "manatsu:allow-save-error-log",
+    "manatsu:default",
     "window-state:allow-restore-window-state",
     "window-state:allow-save-window-state"
   ]

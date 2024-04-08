@@ -7,8 +7,6 @@ cd PROJECT_NAME
 npm run dev
 ```
 
-Just remember to change `PROJECT_NAME` to the name you chose.
-
 ## Database
 
 ### Migration
