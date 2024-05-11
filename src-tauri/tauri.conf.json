@@ -1,6 +1,6 @@
 {
   "productName": "tauri-template",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "identifier": "tbdev.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
@@ -26,8 +26,8 @@
         "label": "main",
         "title": "Tauri Template",
         "url": "src/windows/main/index.html",
-        "width": 800,
-        "height": 600,
+        "minWidth": 800,
+        "minHeight": 600,
         "visible": false,
         "fullscreen": false,
         "resizable": true,
