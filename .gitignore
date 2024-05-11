@@ -29,6 +29,7 @@ target/
 **/gen
 
 # Others
+.temp/
 **/*vite*timestamp*
 coverage/
 .eslintcache

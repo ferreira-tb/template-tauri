@@ -1,4 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { showWindow } from '@/lib/commands';
+import { setGlobalSensors } from '@/lib/sensors';
+
+setGlobalSensors();
+
+onMounted(() => {
+  flushPromises().then(showWindow).catch(handleError);
+});
+</script>
 
 <template>
   <main>

@@ -2,7 +2,7 @@ use serde::ser::Serializer;
 use serde::Serialize;
 
 pub mod prelude {
-  pub use super::{BoxResult, Error, Result};
+  pub use super::Result;
 }
 
 pub type Result<T> = std::result::Result<T, Error>;

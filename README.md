@@ -4,7 +4,7 @@ cargo install tauri-cli --version "^2.0.0-beta"
 manatsu create
 
 cd PROJECT_NAME
-npm run dev
+pnpm run dev
 ```
 
 ## Database
@@ -36,11 +36,11 @@ sea-orm-cli migrate reset
 [`DATABASE_URL`](https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli/#configure-environment) must be set as an environment variable.
 
 ```sh
-sea-orm-cli generate entity -o src-tauri/src/database/entities --with-serde both --model-extra-attributes "serde(rename_all(serialize = \"camelCase\"))"
+sea-orm-cli generate entity -o src-tauri/src/database/entities --with-serde both --model-extra-attributes "serde(rename_all(serialize = \"camelCase\"))" --model-extra-attributes "serde(rename_all(deserialize = \"snake_case\"))" --serde-skip-deserializing-primary-key
 ```
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/tsukilabs/manatsu/main/LICENSE)
+[MIT](https://raw.githubusercontent.com/ferreira-tb/manatsu/main/LICENSE)
 
 Copyright (c) 2024 Andrew Ferreira
