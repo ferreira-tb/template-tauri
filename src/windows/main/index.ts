@@ -1,10 +1,10 @@
-import '@/lib/theme';
+import '@/assets/index.css';
 import App from './App.vue';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import PrimeVue from 'primevue/config';
 import { RouteName, router } from './router';
 import { setupEventListeners } from './events';
+import { setupGlobalEventListeners } from '@/events';
 import { createManatsu, handleError } from 'manatsu';
 
 const app = createApp(App);
@@ -14,9 +14,11 @@ const manatsu = createManatsu();
 app.use(router);
 app.use(pinia);
 app.use(manatsu);
-app.use(PrimeVue);
 
+setupGlobalEventListeners();
 setupEventListeners();
+
+useColorMode().value = 'dark';
 
 router
   .push({ name: RouteName.Home })

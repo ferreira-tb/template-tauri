@@ -5,8 +5,8 @@ const { state: version } = useAsyncState(getVersion, null);
 </script>
 
 <template>
-  <main>
+  <div>
     <h1 v-if="version">Tauri Template {{ version }}</h1>
     <div>Hello World!</div>
-  </main>
+  </div>
 </template>

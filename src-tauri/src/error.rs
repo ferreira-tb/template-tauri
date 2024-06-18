@@ -15,9 +15,13 @@ pub enum Error {
   #[error(transparent)]
   Io(#[from] std::io::Error),
   #[error(transparent)]
+  Manatsu(#[from] tauri_plugin_manatsu::Error),
+  #[error(transparent)]
   Json(#[from] serde_json::Error),
   #[error(transparent)]
   Tauri(#[from] tauri::Error),
+  #[error(transparent)]
+  TokioJoin(#[from] tokio::task::JoinError),
   #[error(transparent)]
   Unknown(#[from] anyhow::Error),
 }
@@ -27,7 +31,7 @@ impl Serialize for Error {
   where
     S: Serializer,
   {
-    serializer.serialize_str(self.to_string().as_ref())
+    serializer.serialize_str(self.to_string().as_str())
   }
 }
 

@@ -1,6 +1,6 @@
 ```bash
 cargo install manatsu sea-orm-cli
-cargo install tauri-cli --version "^2.0.0-beta"
+cargo install tauri-cli --version ">=2.0.0-beta"
 manatsu create
 
 cd PROJECT_NAME

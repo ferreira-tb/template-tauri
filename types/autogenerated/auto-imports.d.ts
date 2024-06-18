@@ -122,6 +122,7 @@ declare global {
   const useAttrs: typeof import('vue')['useAttrs']
   const useBreakpoints: typeof import('@vueuse/core')['useBreakpoints']
   const useBrowserLocation: typeof import('@vueuse/core')['useBrowserLocation']
+  const useColorMode: typeof import('@vueuse/core')['useColorMode']
   const useCurrentElement: typeof import('@vueuse/core')['useCurrentElement']
   const useCycleList: typeof import('@vueuse/core')['useCycleList']
   const useDocumentVisibility: typeof import('@vueuse/core')['useDocumentVisibility']
@@ -200,6 +201,6 @@ declare global {
   export type { MaybeArray, MaybePromise, Nullish, PartialNullish } from '@tb-dev/utility-types'
   import('@tb-dev/utility-types')
   // @ts-ignore
-  export type { CSSProperties, Component, ComponentInstance, ComputedRef, InjectionKey, MaybeRefOrGetter, Ref, ShallowRef, VNode } from 'vue'
+  export type { CSSProperties, Component, ComponentInstance, ComponentPublicInstance, ComputedRef, InjectionKey, MaybeRefOrGetter, Ref, ShallowRef, VNode } from 'vue'
   import('vue')
 }

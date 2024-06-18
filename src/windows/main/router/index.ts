@@ -1,7 +1,7 @@
 import { RouteName } from './routes';
 import { createMemoryHistory, createRouter } from 'vue-router';
 
-export { RouteName } from './routes';
+export { RouteName };
 
 export const router = createRouter({
   history: createMemoryHistory(),

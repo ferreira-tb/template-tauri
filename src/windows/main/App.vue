@@ -10,7 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
+  <main class="fixed inset-0 select-none">
     <router-view #default="{ Component }">
       <template v-if="Component">
         <component :is="Component" />

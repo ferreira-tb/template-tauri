@@ -1,6 +1,6 @@
 {
   "productName": "tauri-template",
-  "version": "0.11.1",
+  "version": "0.12.2",
   "identifier": "tbdev.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
@@ -32,21 +32,17 @@
         "fullscreen": false,
         "resizable": true,
         "maximizable": true,
-        "minimizable": true
+        "minimizable": true,
+        "maximized": false
       }
     ],
     "security": {
-      "assetProtocol": {
-        "scope": ["$APPCACHE/**", "$APPCONFIG/**", "$APPDATA/**"],
-        "enable": true
-      },
       "csp": {
         "default-src": "'self'",
-        "connect-src": "http://ipc.localhost",
+        "connect-src": "ipc: http://ipc.localhost",
         "img-src": "'self' blob: asset: http://asset.localhost",
         "style-src": "'self' 'unsafe-inline'"
       }
     }
-  },
-  "plugins": {}
+  }
 }

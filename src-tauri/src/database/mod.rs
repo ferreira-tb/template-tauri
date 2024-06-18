@@ -9,12 +9,11 @@ pub mod prelude {
 // use migration::{Migrator, MigratorTrait};
 use crate::prelude::*;
 use sea_orm::{Database, DatabaseConnection};
-use tauri::async_runtime::block_on;
+use tokio::fs;
 
 pub fn connect(app: &AppHandle) -> Result<DatabaseConnection> {
-  let path = app.path().app_local_data_dir().unwrap();
-
-  block_on(async move {
+  async_runtime::block_on(async move {
+    let path = app.path().app_local_data_dir().unwrap();
     fs::create_dir_all(&path).await?;
 
     let path = path.join("database.sqlite");

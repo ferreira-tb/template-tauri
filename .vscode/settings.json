@@ -16,13 +16,17 @@
   "editor.formatOnSave": true,
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.useFlatConfig": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "files.exclude": {
     ".eslintcache": true
   },
   "logViewer.logLevel": "trace",
-  "logViewer.watch": [".temp/log.*"],
+  "logViewer.watch": ["app.log"],
   "prettier.requireConfig": true,
   "rust-analyzer.showUnlinkedFileNotification": false,
+  "tailwindCSS.classAttributes": ["class", "header-class"],
   "vsicons.associations.folders": [
     {
       "extensions": ["composables"],
