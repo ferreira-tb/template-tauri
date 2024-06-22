@@ -1,6 +1,6 @@
 {
   "identifier": "main",
-  "windows": ["main"],
+  "windows": ["*"],
   "permissions": [
     "app:allow-name",
     "app:allow-version",
