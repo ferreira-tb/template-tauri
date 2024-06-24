@@ -4544,9 +4544,9 @@ checksum = "290d54ea6f91c969195bdbcd7442c8c2a2ba87da8bf60a7ee86a235d4bc1e125"
 
 [[package]]
 name = "strum"
-version = "0.26.2"
+version = "0.26.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d8cec3501a5194c432b2b7976db6b7d10ec95c253208b45f83f7136aa985e29"
+checksum = "8fec0f0aef304996cf250b31b5a10dee7980c85da9d759361292b8bca5a18f06"
 dependencies = [
  "strum_macros",
 ]
@@ -4920,9 +4920,9 @@ dependencies = [
 
 [[package]]
 name = "tauri-plugin-manatsu"
-version = "0.11.6"
+version = "0.11.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f3b1c0c5dcba8275523c0e2879b40fe1079504e02b30499d8c3b2324b5594bfc"
+checksum = "c1e8c0ede421a82460f25438ba961dc13a31e25137ec73975d85719490030cbb"
 dependencies = [
  "anyhow",
  "chrono",
@@ -4991,7 +4991,7 @@ dependencies = [
  "sea-query",
  "serde",
  "serde_json",
- "strum 0.26.2",
+ "strum 0.26.3",
  "tauri",
  "tauri-build",
  "tauri-plugin-dialog",
