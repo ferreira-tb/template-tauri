@@ -20,6 +20,12 @@ importers:
       '@tauri-apps/plugin-http':
         specifier: ^2.0.0-beta.7
         version: 2.0.0-beta.7
+      '@tauri-apps/plugin-store':
+        specifier: 2.0.0-beta.6
+        version: 2.0.0-beta.6
+      '@tauri-apps/plugin-window-state':
+        specifier: 2.0.0-beta.7
+        version: 2.0.0-beta.7
       '@tb-dev/utility-types':
         specifier: ^1.4.4
         version: 1.4.4
@@ -685,6 +691,12 @@ packages:
 
   '@tauri-apps/plugin-http@2.0.0-beta.7':
     resolution: {integrity: sha512-mxdhcpPPT2oHm0FWe6HS2UbQW2LFTbAv2vExrTYAPJSuXOp2kisgOjazZtswYqpmftpcSZ4dFpmzNlQp188e/g==}
+
+  '@tauri-apps/plugin-store@2.0.0-beta.6':
+    resolution: {integrity: sha512-EBMGUYeeLoJwFbUMdj0PhS7YGih2jhYr/cCHRXZgAhaXTsXdrE7SyW5QfgcMyZH6y7u1gywiIbMIsnjABVOJ7Q==}
+
+  '@tauri-apps/plugin-window-state@2.0.0-beta.7':
+    resolution: {integrity: sha512-IM6X87sSVUwfVz/sUTw+UYFfqeSSsasTADVQ45gzmVbT+IyQpQgKuKyPEQGDzxPcC8bEu580803di+qSTbt5zQ==}
 
   '@tb-dev/auto-import-config@2.3.0':
     resolution: {integrity: sha512-ngZ1OUM/EU/x82ciog4mWesUTc/iizangGG7215+SmUONaElLoWo68Y8F1AAYflG5DkV1GywQ/UzPEVQHQpcwg==}
@@ -3048,6 +3060,14 @@ snapshots:
       '@tauri-apps/api': 2.0.0-beta.14
 
   '@tauri-apps/plugin-http@2.0.0-beta.7':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.14
+
+  '@tauri-apps/plugin-store@2.0.0-beta.6':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.14
+
+  '@tauri-apps/plugin-window-state@2.0.0-beta.7':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.14
 
