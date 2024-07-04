@@ -1,6 +1,6 @@
 {
   "productName": "tauri-template",
-  "version": "0.13.1",
+  "version": "0.14.0",
   "identifier": "tbdev.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
@@ -21,21 +21,6 @@
   },
   "app": {
     "withGlobalTauri": false,
-    "windows": [
-      {
-        "label": "main",
-        "title": "Tauri Template",
-        "url": "src/windows/main/index.html",
-        "minWidth": 800,
-        "minHeight": 600,
-        "visible": false,
-        "fullscreen": false,
-        "resizable": true,
-        "maximizable": true,
-        "minimizable": true,
-        "maximized": false
-      }
-    ],
     "security": {
       "csp": {
         "default-src": "'self'",

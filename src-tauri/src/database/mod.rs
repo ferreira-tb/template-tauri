@@ -1,18 +1,16 @@
-// pub mod entities;
+// REMOVE ME
+#![allow(unused_imports)]
 
 pub mod prelude {
-  // pub use super::entities::prelude::*;
   pub use sea_orm::{ColumnTrait, DatabaseConnection, EntityTrait, LoaderTrait, QueryFilter};
 }
 
-// pub use entities::prelude::*;
-// use migration::{Migrator, MigratorTrait};
 use crate::prelude::*;
 use sea_orm::{Database, DatabaseConnection};
 use tokio::fs;
 
 pub fn connect(app: &AppHandle) -> Result<DatabaseConnection> {
-  async_runtime::block_on(async move {
+  block_on(async move {
     let path = app.path().app_local_data_dir().unwrap();
     fs::create_dir_all(&path).await?;
 
