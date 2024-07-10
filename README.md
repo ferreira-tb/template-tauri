@@ -1,6 +1,6 @@
 ```bash
 rustup toolchain install nightly
-cargo install manatsu sea-orm-cli miho tokei
+cargo install manatsu sea-orm-cli miho
 cargo install tauri-cli --version ">=2.0.0-beta"
 manatsu create
 

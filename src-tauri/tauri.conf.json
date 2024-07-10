@@ -1,6 +1,6 @@
 {
   "productName": "tauri-template",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "identifier": "tbdev.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
