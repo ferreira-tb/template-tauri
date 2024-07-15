@@ -21,8 +21,8 @@ importers:
         specifier: ^2.0.0-beta.7
         version: 2.0.0-beta.7
       '@tauri-apps/plugin-store':
-        specifier: 2.0.0-beta.6
-        version: 2.0.0-beta.6
+        specifier: 2.0.0-beta.7
+        version: 2.0.0-beta.7
       '@tauri-apps/plugin-window-state':
         specifier: 2.0.0-beta.7
         version: 2.0.0-beta.7
@@ -682,14 +682,18 @@ packages:
     resolution: {integrity: sha512-YLYgHqdwWswr4Y70+hRzaLD6kLIUgHhE3shLXNquPiTaQ9+cX3Q2dB0AFfqsua6NXYFNe7LfkmMzaqEzqv3yQg==}
     engines: {node: '>= 18.18', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
 
+  '@tauri-apps/api@2.0.0-beta.15':
+    resolution: {integrity: sha512-H9w6iISmR+NvH4XuyCZB4zDN10tf9RFt6i/9JHEjaRhAowdAaJ+oiXq/3kedizNClHMtbTQ5j0oqDVPkZDAI8g==}
+    engines: {node: '>= 18.18', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
+
   '@tauri-apps/plugin-dialog@2.0.0-beta.6':
     resolution: {integrity: sha512-Rw8C8t/0y3QExEinp+cAOZi/BDt0c9jifv0bS3WDCwQt9ANdmfCWKamsIhqwemt3MjepkU2RV8bvphzoWlbOGw==}
 
   '@tauri-apps/plugin-http@2.0.0-beta.7':
     resolution: {integrity: sha512-mxdhcpPPT2oHm0FWe6HS2UbQW2LFTbAv2vExrTYAPJSuXOp2kisgOjazZtswYqpmftpcSZ4dFpmzNlQp188e/g==}
 
-  '@tauri-apps/plugin-store@2.0.0-beta.6':
-    resolution: {integrity: sha512-EBMGUYeeLoJwFbUMdj0PhS7YGih2jhYr/cCHRXZgAhaXTsXdrE7SyW5QfgcMyZH6y7u1gywiIbMIsnjABVOJ7Q==}
+  '@tauri-apps/plugin-store@2.0.0-beta.7':
+    resolution: {integrity: sha512-OgeicsLfN7/u/vfxhzJfsZsNfVJWrhmwhEn2oK4OJ1kvkrGbkfK0/ZORSkmqbpByI6hXWYZrbeyXDuVIefVWAQ==}
 
   '@tauri-apps/plugin-window-state@2.0.0-beta.7':
     resolution: {integrity: sha512-IM6X87sSVUwfVz/sUTw+UYFfqeSSsasTADVQ45gzmVbT+IyQpQgKuKyPEQGDzxPcC8bEu580803di+qSTbt5zQ==}
@@ -718,6 +722,7 @@ packages:
 
   '@tb-dev/utility-types@1.4.4':
     resolution: {integrity: sha512-//mGexdOfuN4cwQtY+5aZIQGAxhHkRoTzNjfSk4a8AHBY19vNvCwnX9VhAfDgFfZwiwTcuYXhPYZPhMyr1Vnpg==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@tb-dev/utils@1.8.6':
     resolution: {integrity: sha512-9N/QthpM0dywVEjnurFKa8wdgPciwtWn0fPgFGWUINoAxYW47l6pRQIId+8Xcqqrz/Gfy1Ehxb/AcPdUnbo++g==}
@@ -3044,6 +3049,8 @@ snapshots:
 
   '@tauri-apps/api@2.0.0-beta.14': {}
 
+  '@tauri-apps/api@2.0.0-beta.15': {}
+
   '@tauri-apps/plugin-dialog@2.0.0-beta.6':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.14
@@ -3052,9 +3059,9 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.14
 
-  '@tauri-apps/plugin-store@2.0.0-beta.6':
+  '@tauri-apps/plugin-store@2.0.0-beta.7':
     dependencies:
-      '@tauri-apps/api': 2.0.0-beta.14
+      '@tauri-apps/api': 2.0.0-beta.15
 
   '@tauri-apps/plugin-window-state@2.0.0-beta.7':
     dependencies:
