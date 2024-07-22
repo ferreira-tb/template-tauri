@@ -38,14 +38,14 @@
     "clsx": "^2.1.1",
     "manatsu": "^0.13.1",
     "pinia": "^2.1.7",
-    "radix-vue": "^1.9.1",
+    "radix-vue": "^1.9.2",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "vue": "^3.4.32",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@tb-dev/auto-import-config": "^3.0.0",
+    "@tb-dev/auto-import-config": "^3.0.1",
     "@tb-dev/eslint-config": "^3.8.10",
     "@types/node": "^20.14.11",
     "@vitejs/plugin-vue": "^5.0.5",
