@@ -51,8 +51,8 @@ importers:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.5.3)(vue@3.4.32(typescript@5.5.3))
       radix-vue:
-        specifier: ^1.9.1
-        version: 1.9.1(vue@3.4.32(typescript@5.5.3))
+        specifier: ^1.9.2
+        version: 1.9.2(vue@3.4.32(typescript@5.5.3))
       tailwind-merge:
         specifier: ^2.4.0
         version: 2.4.0
@@ -67,8 +67,8 @@ importers:
         version: 4.4.0(vue@3.4.32(typescript@5.5.3))
     devDependencies:
       '@tb-dev/auto-import-config':
-        specifier: ^3.0.0
-        version: 3.0.0(@tauri-apps/api@2.0.0-beta.15)(@tb-dev/utils@2.0.1)(@types/node@20.14.11)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/math@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/router@10.11.0(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(manatsu@0.13.1(@tauri-apps/api@2.0.0-beta.15)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(pinia@2.1.7(typescript@5.5.3)(vue@3.4.32(typescript@5.5.3)))(rollup@4.18.0)(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3))
+        specifier: ^3.0.1
+        version: 3.0.1(@tauri-apps/api@2.0.0-beta.15)(@tb-dev/utils@2.0.1)(@types/node@20.14.11)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/math@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/router@10.11.0(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(manatsu@0.13.1(@tauri-apps/api@2.0.0-beta.15)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(pinia@2.1.7(typescript@5.5.3)(vue@3.4.32(typescript@5.5.3)))(rollup@4.18.0)(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3))
       '@tb-dev/eslint-config':
         specifier: ^3.8.10
         version: 3.8.10(eslint@8.57.0)(typescript@5.5.3)
@@ -468,8 +468,8 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@floating-ui/core@1.6.2':
-    resolution: {integrity: sha512-+2XpQV9LLZeanU4ZevzRnGFg2neDeKHgFLjP6YLW+tly0IvrhqT4u8enLGjLH3qeh85g19xY5rsAusfwTdn5lg==}
+  '@floating-ui/core@1.6.4':
+    resolution: {integrity: sha512-a4IowK4QkXl4SCWTGUR0INAfEOX3wtsYw3rKK5InQEHMGObkR8Xk44qYQD9P4r6HHw0iIfK6GUKECmY8sTkqRA==}
 
   '@floating-ui/dom@1.6.7':
     resolution: {integrity: sha512-wmVfPG5o2xnKDU4jx/m4w5qva9FWHcnZ8BvzEe90D/RpwsJaTAVYPEPdQ8sbr/N8zZTAHlZUTQdqg8ZUbzHmng==}
@@ -667,14 +667,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@swc/helpers@0.5.11':
-    resolution: {integrity: sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==}
+  '@swc/helpers@0.5.12':
+    resolution: {integrity: sha512-KMZNXiGibsW9kvZAO1Pam2JPTDBm+KSHMMHWdsyI/1DbIZjT2A6Gy3hblVXUMEDvUAKq+e0vL0X0o54owWji7g==}
 
-  '@tanstack/virtual-core@3.8.1':
-    resolution: {integrity: sha512-uNtAwenT276M9QYCjTBoHZ8X3MUeCRoGK59zPi92hMIxdfS9AyHjkDWJ94WroDxnv48UE+hIeo21BU84jKc8aQ==}
+  '@tanstack/virtual-core@3.8.3':
+    resolution: {integrity: sha512-vd2A2TnM5lbnWZnHi9B+L2gPtkSeOtJOAw358JqokIH1+v2J7vUAzFVPwB/wrye12RFOurffXu33plm4uQ+JBQ==}
 
-  '@tanstack/vue-virtual@3.8.1':
-    resolution: {integrity: sha512-uhty1LzUbbcVc5zdMMSUjUt/ECTlMCtK49Ww7dH2m4lNNLGYwkj5SbfrAD8uCZxV1VeV7DRMXqhwUTELyR5rrA==}
+  '@tanstack/vue-virtual@3.8.3':
+    resolution: {integrity: sha512-xrFLkOiqLoGwohgr1+Q880hkNdQWqwi19EXzx38iAjVEm1Db3KIAV0aVP57/dnNXU3NO1Vx8wnIHII5J4n1LyA==}
     peerDependencies:
       vue: ^2.7.0 || ^3.0.0
 
@@ -694,18 +694,18 @@ packages:
   '@tauri-apps/plugin-window-state@2.0.0-beta.8':
     resolution: {integrity: sha512-lKONWKsQ5J+Yx8z67mw6bo1crG6fk5wxObtE5x3SJgoi+4MAf4diMirEbDh8m3O4v5/XvCynW/aiFOTQDEj6Bg==}
 
-  '@tb-dev/auto-import-config@3.0.0':
-    resolution: {integrity: sha512-4rWyjyWYDVaUQHo4m47cKFJCp4rRBpLI3dGYM0lgkIUl/bzA1VAFfX7wk7qrDBnqrmbAyF9/oZmso4gzPBukPA==}
+  '@tb-dev/auto-import-config@3.0.1':
+    resolution: {integrity: sha512-V5iBE3eih5p5Wgb5VNnL03CYk1W3WB/A0FyuePQNG20z2OC+6MQgvg8RkIv7gFuSVMa3XvTTe/gM6/EMosXJDA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@tauri-apps/api': ^2.0.0-beta.14
-      '@tb-dev/utils': ^2.0.0
+      '@tauri-apps/api': ^2.0.0-beta.15
+      '@tb-dev/utils': ^2.0.1
       '@vueuse/core': ^10.11.0
       '@vueuse/math': ^10.11.0
       '@vueuse/router': ^10.11.0
-      manatsu: ^0.13.0
+      manatsu: ^0.13.1
       pinia: ^2.1.7
-      vue: ^3.4.31
+      vue: ^3.4.32
       vue-router: ^4.4.0
 
   '@tb-dev/eslint-config@3.8.10':
@@ -2057,8 +2057,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  radix-vue@1.9.1:
-    resolution: {integrity: sha512-fObA+9l2ixNWBXRMj5mBZfmVv2znqIUph+0uo7QA/s7pDYSST2vGvxCbrg/xQGxWRwaQ8ejgo1wg2MzhHcbjLw==}
+  radix-vue@1.9.2:
+    resolution: {integrity: sha512-XXwEMmXJmzcy9SebywbQdrZg8UE1jueqPMpxKK6NoquRC0CP4dvlBcuzp4lDWNSsqOgmkXa6CNbwEzdCX96umg==}
     peerDependencies:
       vue: '>= 3.2.0'
 
@@ -2856,13 +2856,13 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@floating-ui/core@1.6.2':
+  '@floating-ui/core@1.6.4':
     dependencies:
       '@floating-ui/utils': 0.2.4
 
   '@floating-ui/dom@1.6.7':
     dependencies:
-      '@floating-ui/core': 1.6.2
+      '@floating-ui/core': 1.6.4
       '@floating-ui/utils': 0.2.4
 
   '@floating-ui/utils@0.2.4': {}
@@ -2890,11 +2890,11 @@ snapshots:
 
   '@internationalized/date@3.5.4':
     dependencies:
-      '@swc/helpers': 0.5.11
+      '@swc/helpers': 0.5.12
 
   '@internationalized/number@3.5.3':
     dependencies:
-      '@swc/helpers': 0.5.11
+      '@swc/helpers': 0.5.12
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -3036,15 +3036,15 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
 
-  '@swc/helpers@0.5.11':
+  '@swc/helpers@0.5.12':
     dependencies:
       tslib: 2.6.3
 
-  '@tanstack/virtual-core@3.8.1': {}
+  '@tanstack/virtual-core@3.8.3': {}
 
-  '@tanstack/vue-virtual@3.8.1(vue@3.4.32(typescript@5.5.3))':
+  '@tanstack/vue-virtual@3.8.3(vue@3.4.32(typescript@5.5.3))':
     dependencies:
-      '@tanstack/virtual-core': 3.8.1
+      '@tanstack/virtual-core': 3.8.3
       vue: 3.4.32(typescript@5.5.3)
 
   '@tauri-apps/api@2.0.0-beta.15': {}
@@ -3065,7 +3065,7 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.15
 
-  '@tb-dev/auto-import-config@3.0.0(@tauri-apps/api@2.0.0-beta.15)(@tb-dev/utils@2.0.1)(@types/node@20.14.11)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/math@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/router@10.11.0(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(manatsu@0.13.1(@tauri-apps/api@2.0.0-beta.15)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(pinia@2.1.7(typescript@5.5.3)(vue@3.4.32(typescript@5.5.3)))(rollup@4.18.0)(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3))':
+  '@tb-dev/auto-import-config@3.0.1(@tauri-apps/api@2.0.0-beta.15)(@tb-dev/utils@2.0.1)(@types/node@20.14.11)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/math@10.11.0(vue@3.4.32(typescript@5.5.3)))(@vueuse/router@10.11.0(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(manatsu@0.13.1(@tauri-apps/api@2.0.0-beta.15)(@vueuse/core@10.11.0(vue@3.4.32(typescript@5.5.3)))(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3)))(pinia@2.1.7(typescript@5.5.3)(vue@3.4.32(typescript@5.5.3)))(rollup@4.18.0)(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3))':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.15
       '@tb-dev/utils': 2.0.1
@@ -4469,13 +4469,13 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  radix-vue@1.9.1(vue@3.4.32(typescript@5.5.3)):
+  radix-vue@1.9.2(vue@3.4.32(typescript@5.5.3)):
     dependencies:
       '@floating-ui/dom': 1.6.7
       '@floating-ui/vue': 1.1.1(vue@3.4.32(typescript@5.5.3))
       '@internationalized/date': 3.5.4
       '@internationalized/number': 3.5.3
-      '@tanstack/vue-virtual': 3.8.1(vue@3.4.32(typescript@5.5.3))
+      '@tanstack/vue-virtual': 3.8.3(vue@3.4.32(typescript@5.5.3))
       '@vueuse/core': 10.11.0(vue@3.4.32(typescript@5.5.3))
       '@vueuse/shared': 10.11.0(vue@3.4.32(typescript@5.5.3))
       aria-hidden: 1.2.4
