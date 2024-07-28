@@ -11,10 +11,10 @@ onMounted(() => {
 
 <template>
   <main class="fixed inset-0 select-none">
-    <router-view #default="{ Component }">
+    <RouterView #default="{ Component }">
       <template v-if="Component">
         <component :is="Component" />
       </template>
-    </router-view>
+    </RouterView>
   </main>
 </template>

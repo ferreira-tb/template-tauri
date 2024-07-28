@@ -1,6 +1,6 @@
 [package]
 name = "tauri-template"
-version = "0.15.0"
+version = "0.16.0"
 publish = false
 
 [package.edition]
@@ -20,21 +20,10 @@ futures = "0.3.30"
 itertools = "0.13.0"
 serde_json = "1.0.120"
 tauri-plugin-dialog = "2.0.0-beta.11"
-tauri-plugin-manatsu = "0.13.1"
-tauri-plugin-prevent-default = "0.1.11"
+tauri-plugin-manatsu = "0.14.0"
 tauri-plugin-single-instance = "2.0.0-beta.11"
-tauri-plugin-store = "2.0.0-beta.10"
 tauri-plugin-window-state = "2.0.0-beta.11"
 thiserror = "1.0.63"
-
-[dependencies.sea-orm]
-version = "0.12.15"
-features = ["macros", "runtime-tokio-rustls", "sqlx-sqlite"]
-
-[dependencies.sea-query]
-version = "0.30.7"
-default-features = false
-features = ["backend-sqlite", "thread-safe"]
 
 [dependencies.serde]
 version = "1.0.204"
@@ -52,18 +41,17 @@ features = ["rustls-tls"]
 version = "2.0.0-beta.12"
 features = ["rustls-tls"]
 
+[dependencies.tauri-plugin-pinia]
+version = "0.2"
+features = ["ahash"]
+
+[dependencies.tauri-plugin-prevent-default]
+version = "0.2"
+features = ["ahash"]
+
 [dependencies.tokio]
-version = "1.38.1"
+version = "1.39.2"
 features = ["full"]
 
-[dependencies.tracing]
-version = "0.1.40"
-features = ["release_max_level_off"]
-
-[dependencies.tracing-appender]
-version = "0.2.3"
-features = ["parking_lot"]
-
-[dependencies.tracing-subscriber]
-version = "0.3.18"
-features = ["chrono", "env-filter", "fmt", "parking_lot", "registry"]
+[features]
+open-devtools = ["tauri/devtools"]

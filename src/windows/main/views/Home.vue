@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getVersion } from '@tauri-apps/api/app';
 
-const { state: version } = useAsyncState(getVersion, null);
+const { state: version } = useAsyncState(getVersion, null, { onError: handleError });
 </script>
 
 <template>

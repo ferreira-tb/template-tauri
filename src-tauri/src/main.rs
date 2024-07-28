@@ -3,45 +3,31 @@
 #![feature(let_chains, try_blocks)]
 
 mod command;
-mod database;
 mod error;
 mod prelude;
-mod state;
-mod utils;
 mod window;
-
-use error::BoxResult;
-use state::AppState;
-use tauri::{App, Manager};
 
 fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_dialog::init())
     .plugin(tauri_plugin_http::init())
     .plugin(tauri_plugin_manatsu::init())
-    .plugin(tauri_plugin_store::Builder::new().build())
+    .plugin(tauri_plugin_pinia::init())
     .plugin(plugin::prevent_default())
     .plugin(plugin::single_instance())
     .plugin(plugin::window_state())
     .setup(setup)
     .invoke_handler(tauri::generate_handler![
       command::close_window,
+      command::focus_window,
       command::show_window
     ])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
 
-fn setup(app: &mut App) -> BoxResult<()> {
-  let handle = app.handle();
-
-  #[cfg(debug_assertions)]
-  utils::log::setup_tracing(handle);
-
-  let db = database::connect(handle)?;
-  app.manage(AppState { db });
-
-  window::app::open(handle)?;
+fn setup(app: &mut tauri::App) -> error::BoxResult<()> {
+  window::app::open(app.handle())?;
 
   Ok(())
 }
@@ -56,7 +42,7 @@ mod plugin {
     use tauri_plugin_prevent_default::Flags;
 
     tauri_plugin_prevent_default::Builder::new()
-      .with_flags(Flags::all().difference(Flags::RELOAD))
+      .with_flags(Flags::all().difference(Flags::DEV_TOOLS | Flags::RELOAD))
       .build()
   }
 

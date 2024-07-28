@@ -3,7 +3,7 @@ pub mod app;
 use crate::prelude::*;
 use std::path::PathBuf;
 use strum::{Display, EnumIs};
-use tauri::{EventTarget, WebviewUrl};
+use tauri::{EventTarget, WebviewUrl, Window};
 
 #[derive(Debug, Display, EnumIs)]
 #[strum(serialize_all = "kebab-case")]
@@ -49,9 +49,11 @@ pub trait WindowManager: Manager<Wry> {
 }
 
 impl WindowManager for AppHandle {}
+impl WindowManager for WebviewWindow {}
+impl WindowManager for Window {}
 
 pub trait WindowExt {
-  /// Like [`WebviewWindow::set_focus`], but unminimize the window before focusing.
+  /// Same as [`WebviewWindow::set_focus`], but unminimize the window before focusing.
   fn set_foreground_focus(&self) -> Result<()>;
 }
 

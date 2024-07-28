@@ -1,7 +1,5 @@
-import '@/assets/index.css';
 import App from './App.vue';
 import { createApp } from '@/lib/app';
-import { handleError } from 'manatsu';
 import { Route, router } from './router';
 import { setupEventListeners } from './events';
 

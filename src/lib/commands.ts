@@ -1,10 +1,15 @@
 export enum Command {
   CloseWindow = 'close_window',
-  ShowWindow = 'show_window'
+  FocusWindow = 'focus_window',
+  ShowWindow = 'show_window',
 }
 
-export function closeWindow() {
-  invoke(Command.CloseWindow).catch(handleError);
+export async function closeWindow() {
+  await invoke(Command.CloseWindow);
+}
+
+export async function focusWindow() {
+  await invoke(Command.FocusWindow);
 }
 
 export async function showWindow() {

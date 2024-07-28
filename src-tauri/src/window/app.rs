@@ -13,5 +13,8 @@ pub fn open(app: &AppHandle) -> Result<()> {
     .visible(false)
     .build()?;
 
+  #[cfg(feature = "open-devtools")]
+  window.open_devtools();
+
   Ok(())
 }

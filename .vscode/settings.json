@@ -8,7 +8,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "conventionalCommits.promptScopes": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
@@ -22,21 +21,7 @@
   "files.exclude": {
     ".eslintcache": true
   },
-  "logViewer.logLevel": "trace",
-  "logViewer.watch": ["app.log"],
   "prettier.requireConfig": true,
   "rust-analyzer.showUnlinkedFileNotification": false,
-  "tailwindCSS.classAttributes": ["class", "header-class"],
-  "vsicons.associations.folders": [
-    {
-      "extensions": ["composables"],
-      "format": "svg",
-      "icon": "theme"
-    },
-    {
-      "extensions": ["store", "stores"],
-      "format": "svg",
-      "icon": "story"
-    }
-  ]
+  "tailwindCSS.classAttributes": ["class", "header-class"]
 }

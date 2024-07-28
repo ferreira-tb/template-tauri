@@ -1,6 +1,17 @@
-import config from '@tb-dev/eslint-config';
+import { defineConfig } from '@tb-dev/eslint-config';
 
-export default config({
-  vue: true,
-  project: ['./tsconfig.json']
+export default defineConfig({
+  project: ['./tsconfig.json'],
+  features: {
+    vue: true,
+  },
+  overrides: {
+    vue: {
+      'vue/component-name-in-template-casing': [
+        'error',
+        'PascalCase',
+        { registeredComponentsOnly: false },
+      ],
+    },
+  },
 });

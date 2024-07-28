@@ -11,13 +11,13 @@ pub type BoxResult<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 #[derive(Debug, thiserror::Error)]
 pub enum Error {
   #[error(transparent)]
-  Database(#[from] sea_orm::error::DbErr),
-  #[error(transparent)]
   Io(#[from] std::io::Error),
+  #[error(transparent)]
+  Json(#[from] serde_json::Error),
   #[error(transparent)]
   Manatsu(#[from] tauri_plugin_manatsu::Error),
   #[error(transparent)]
-  Json(#[from] serde_json::Error),
+  Pinia(#[from] tauri_plugin_pinia::Error),
   #[error(transparent)]
   Tauri(#[from] tauri::Error),
   #[error(transparent)]
