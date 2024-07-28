@@ -1,6 +1,6 @@
 {
   "name": "tauri-template",
-  "version": "0.16.2",
+  "version": "0.16.3",
   "description": "Tauri template",
   "type": "module",
   "packageManager": "pnpm@9.6.0",
