@@ -14,4 +14,4 @@ pnpm run dev
 
 MIT
 
-Copyright (c) 2024 %AUTHOR_NAME%
+Copyright (c) %CURRENT_YEAR% %AUTHOR_NAME%

@@ -1,6 +1,6 @@
 {
   "name": "tauri-template",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "Tauri template",
   "type": "module",
   "packageManager": "pnpm@9.6.0",
@@ -20,7 +20,6 @@
     "lint-fix": "eslint . --config eslint.config.js --fix",
     "prepare": "husky",
     "type-check": "vue-tsc --noEmit",
-    "update": "miho update -t",
     "vite:dev": "vite",
     "vite:build": "pnpm run type-check && vite build"
   },
