@@ -1,6 +1,6 @@
 {
   "productName": "tauri-template",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "identifier": "tsukilabs.tauri-template",
   "build": {
     "beforeDevCommand": "pnpm run vite:dev",
